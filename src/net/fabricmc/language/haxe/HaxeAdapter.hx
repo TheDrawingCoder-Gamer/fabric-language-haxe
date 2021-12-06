@@ -32,7 +32,8 @@ private Foo to _Foo.Foo
 That's all I could find for classes
 Private Foo is private so we should NOT demangle it
 Functions I am unsure about
-@:generic exists but uh you shouldn't be using that, as java has real overload support
+@:generic exists but uh you shouldn't be using that, as any functions that have the same name would conflict
+and overloads are unsupported on default adapter anyway
 */
 @:nativeGen
 class HaxeAdapter implements LanguageAdapter {
